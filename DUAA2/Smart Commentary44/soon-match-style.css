@@ -1,0 +1,194 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+ul{
+    list-style-type: none;
+}
+.calender{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.month{
+    padding: 70px 25px;
+    width: 100%;
+    background: #095700;
+    text-align: center;
+}
+.month ul{
+    margin: 0;
+    padding: 0;
+}
+.month ul li{
+    color: #ccc;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.month .prev{
+    float: left;
+    padding-top: 10px;
+}
+.month .next{
+    float: right;
+    padding-top: 10px;
+}
+.weekdays {
+    margin: 0;
+    padding: 10px 0;
+    background-color: #ccc;
+}
+.weekdays li {
+    display: inline-block;
+    width: 13.6%;
+    color: #666;
+    text-align: center;
+}
+.days{
+    padding: 10px 0;
+    background: #eee;
+    margin: 0;
+}
+.days li{
+    list-style-type: none;
+    display: inline-block;
+    width: 13.6%;
+    text-align: center;
+    margin-bottom: 5px;
+    font-size: 12px;
+    color: #777;
+}
+.days li .active{
+    padding: 5px;
+    background: #095700;
+    color: white !important;
+}
+@media screen and (max-width:720px) {
+    .weekdays li, .days li {width: 13.1%;}
+}
+@media screen and (max-width:420px) {
+    .weekdays li, .days li {width: 12.5%;}
+    .days li .active{padding: 2px;}
+}
+@media screen and (max-width:290px) {
+    .weekdays li, .days li {width: 12.2%;}
+}
+
+/* Live Matches Start */
+.live-matches {
+    margin-top: 20px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 2px solid black;
+    border-radius: 20px;
+    width: 350px;
+    background-color: #666;
+}
+.live-matches p {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: white;
+    direction: rtl;
+    text-align: right;
+    display: block;
+}
+.live-matches div {
+    width: 350px;
+    height: 200px;
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-size: 98%;
+    background-position: left;
+}
+.live-matches img {
+    width: 100%;
+    height: 60%;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+
+/* Live Matches End */
+
+/* Recommended Clubs Start */
+.recommended-clubs {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.recommended-clubs-p {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: black;
+    padding: 20px;
+    direction: rtl;
+    text-align: right;
+}
+.recommended-clubs div {
+    width: 350px;
+    height: 200px;
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-size: 98%;
+    background-position: left;
+}
+.recommended-clubs div.England-league {
+    background-image: url(images/England_league.jpg);
+}
+.recommended-clubs div.Spain-league {
+    background-image: url(images/Spain_league.jpg);
+}
+.recommended-clubs div.France-league {
+    background-image: url(images/France_league.jpg);
+}
+.recommended-clubs div.Italy-league {
+    background-image: url(images/Italy_league.jpg);
+}
+.recommended-clubs div:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.recommended-clubs div img {
+    width: 110px;
+    height: 110px;
+    position: absolute;
+    bottom: 35%;
+    right: 5%;
+    margin-left: 10px;
+    border-radius: 20px;
+    padding: 10px;
+    border: 3px solid white;
+}
+.recommended-clubs p {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-color: #095700;
+    color: white;
+    padding: 10px;
+    font-size: 1.5em;
+    font-weight: 700;
+    border-radius: 5px 1px 20px 1px;
+    transition: transform 0.3s ease;
+}
+.recommended-clubs h4 {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    z-index: 10;
+}
+/* Recommended Clubs End */

@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+}
+
+.live-gool {
+    background-color: #333;
+}
+
+.live-gool .content {
+    margin-top: 30px;
+}
+
+.gol-card {
+    background-color: #fff;
+    border: 3px solid #fff; 
+    min-height: 14em;
+    width: 23em;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px;
+    transition: 0.7s ease;
+}
+
+.gol-card:hover {
+    transform: scale(1.1);
+}
+
+.gol-card:hover .gol-image {
+    opacity: 0.9;
+}
+
+.gol-image img{
+    width: 100%;
+}
+
+.gol-info {
+    padding: 1em;
+}
+
+.gpl-category {
+    font-size: 0.8 em;
+    color: #000;
+}
+
+.gol-title {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin-top: 10px;
+}
+
+.more-details {
+    text-decoration: none;
+    color: #0056b3;
+}
+
+.more-details:hover {
+    color: #f4ce5c;
+}
